@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculate product profit and margin easily with our India-focused product profit calculator. Suitable for Amazon, Flipkart, Meesho sellers and more.">
+    <meta name="keywords" content="product profit calculator, Amazon seller calculator, Flipkart profit calculator, Meesho seller tools, Indian e-commerce calculator, profit margin calculator India, online selling calculator">
+    <meta name="author" content="Product Profit Calculator India">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="geo.region" content="IN">
+    <meta name="geo.country" content="India">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Product Profit Calculator - India's Best Tool for Amazon, Flipkart, Meesho Sellers">
+    <meta property="og:description" content="Calculate product profit and margin easily with our India-focused product profit calculator. Suitable for Amazon, Flipkart, Meesho sellers and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.productprofitcalculator.in">
+    <meta property="og:image" content="https://www.productprofitcalculator.in/og-image.jpg">
+    <meta property="og:site_name" content="Product Profit Calculator India">
+    <meta property="og:locale" content="en_IN">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Product Profit Calculator - India's Best Tool for Amazon, Flipkart, Meesho Sellers">
+    <meta name="twitter:description" content="Calculate product profit and margin easily with our India-focused product profit calculator. Suitable for Amazon, Flipkart, Meesho sellers and more.">
+    <meta name="twitter:image" content="https://www.productprofitcalculator.in/twitter-image.jpg">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Product Profit Calculator India",
+        "description": "Calculate product profit and margin easily with our India-focused product profit calculator. Suitable for Amazon, Flipkart, Meesho sellers and more.",
+        "url": "https://www.productprofitcalculator.in",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "INR"
+        },
+        "creator": {
+            "@type": "Organization",
+            "name": "Product Profit Calculator India"
+        }
+    }
+    </script>
+    
+    <title>Product Profit Calculator - India's Best Tool for Amazon, Flipkart, Meesho Sellers</title>
+    <link rel="canonical" href="https://www.productprofitcalculator.in">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .adsense-zone {
+            min-height: 90px;
+            background: #f8f9fa;
+            border: 2px dashed #dee2e6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6c757d;
+            font-size: 14px;
+        }
+        .platform-badge {
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .calculator-input {
+            transition: all 0.3s ease;
+        }
+        .calculator-input:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .result-card {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            color: white;
+        }
+        .loss-card {
+            background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .mobile-stack {
+                flex-direction: column;
+            }
+            .adsense-zone {
+                min-height: 50px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <!-- Top AdSense Zone -->
+    <div class="w-full py-4 bg-white shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="adsense-zone rounded">
+                <span><i class="fas fa-ad mr-2"></i>AdSense Top Banner Zone (728x90 / 320x50 Mobile)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="gradient-bg text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                <i class="fas fa-calculator mr-3"></i>Product Profit Calculator
+            </h1>
+            <p class="text-xl mb-4">India's Most Trusted Calculator for E-commerce Sellers</p>
+            <div class="flex flex-wrap justify-center gap-2 mb-4">
+                <span class="platform-badge"><i class="fab fa-amazon mr-1"></i>Amazon</span>
+                <span class="platform-badge"><i class="fas fa-shopping-cart mr-1"></i>Flipkart</span>
+                <span class="platform-badge"><i class="fas fa-store mr-1"></i>Meesho</span>
+                <span class="platform-badge"><i class="fas fa-globe mr-1"></i>All Platforms</span>
+            </div>
+            <p class="text-lg opacity-90">Calculate profit and margin easily with our India-focused product profit calculator</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <div class="grid lg:grid-cols-3 gap-8">
+            <!-- Calculator Section -->
+            <div class="lg:col-span-2">
+                <div class="bg-white rounded-lg card-shadow p-6">
+                    <h2 class="text-2xl font-bold mb-6 text-gray-800">
+                        <i class="fas fa-rupee-sign mr-2 text-green-600"></i>Product Profit Calculator
+                    </h2>
+                    
+                    <!-- Platform Selection -->
+                    <div class="mb-6">
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Select Platform</label>
+                        <select id="platform" class="w-full p-3 border border-gray-300 rounded-md calculator-input focus:ring-2 focus:ring-blue-500">
+                            <option value="general">General Calculator</option>
+                            <option value="amazon">Amazon India</option>
+                            <option value="flipkart">Flipkart</option>
+                            <option value="meesho">Meesho</option>
+                            <option value="myntra">Myntra</option>
+                            <option value="other">Other Platform</option>
+                        </select>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- Product Details -->
+                        <div>
+                            <h3 class="text-lg font-semibold mb-4 text-gray-700">
+                                <i class="fas fa-box mr-2"></i>Product Details
+                            </h3>
+                            
+                            <div class="space-y-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Product Name</label>
+                                    <input type="text" id="productName" placeholder="Enter product name" 
+                                           class="w-full p-3 border border-gray-300 rounded-md calculator-input focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Currency</label>
+                                    <select id="currency" class="w-full p-3 border border-gray-300 rounded-md calculator-input focus:ring-2 focus:ring-blue-500">
+                                        <option value="INR">₹ Indian Rupee (INR)</option>
+                                        <option value="USD">$ US Dollar (USD)</option>
+                                        <option value="EUR">€ Euro (EUR)</option>
+                                        <option value="GBP">£ British Pound (GBP)</option>
+                                    </select>
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Cost Price (per unit)</label>
+                                    <input type="number" id="costPrice" placeholder="0.00" step="0.01" 
+                                           class="w-full p-3 border border-gray-300 rounded-md calculator-input focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Selling Price (per unit)</label>
+                                    <input type="number" id="sellingPrice" placeholder="0.00" step="0.01" 
+                                           class="w-full p-3 border border-gray-300 rounded-md calculator-input focus:ring-2 focus:ring-blue-500">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Additional Details -->
+                        <div>
+                            <h3 class="text-lg font-semibold mb-4 text-gray-700">
+                                <i class="fas fa-chart-line mr-2"></i>Additional Details
+                            </h3>
+                            
+                            <div class="space-y-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Quantity Sold</label>
+                                    <input type="number" id="quantity" placeholder="1" min="1" 
+                                           class="w-full p-3 border border-gray-300 rounded-md calculator-input focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Platform Commission (%)</label>
+                                    <input type="number" id="commission" placeholder="0" step="0.1" 
+                                           class="w-full p-3 border border-gray-300 rounded-md calculator-input focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Shipping Cost</label>
+                                    <input type="number" id="shipping" placeholder="0.00" step="0.01" 
+                                           class="w-full p-3 border border-gray-300 rounded-md calculator-input focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Other Expenses</label>
+                                    <input type="number" id="otherExpenses" placeholder="0.00" step="0.01" 
+                                           class="w-full p-3 border border-gray-300 rounded-md calculator-input focus:ring-2 focus:ring-blue-500">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button onclick="calculateProfit()" 
+                            class="w-full mt-6 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md transition duration-300 transform hover:scale-105">
+                        <i class="fas fa-calculator mr-2"></i>Calculate Profit
+                    </button>
+                </div>
+
+                <!-- Results Section -->
+                <div id="resultsSection" class="mt-8 bg-white rounded-lg card-shadow p-6 hidden">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-800">
+                        <i class="fas fa-chart-bar mr-2"></i>Profit Analysis
+                    </h3>
+                    <div id="results" class="space-y-4"></div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="space-y-6">
+                <!-- AdSense Sidebar -->
+                <div class="bg-white rounded-lg card-shadow p-4">
+                    <div class="adsense-zone rounded h-64">
+                        <span><i class="fas fa-ad mr-2"></i>AdSense Sidebar Zone (300x250)</span>
+                    </div>
+                </div>
+
+                <!-- Platform Commission Guide -->
+                <div class="bg-white rounded-lg card-shadow p-6">
+                    <h3 class="text-lg font-bold mb-4 text-gray-800">
+                        <i class="fas fa-info-circle mr-2"></i>Platform Commission Rates
+                    </h3>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex justify-between">
+                            <span class="font-medium">Amazon India:</span>
+                            <span class="text-red-600">5-20%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="font-medium">Flipkart:</span>
+                            <span class="text-red-600">5-25%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="font-medium">Meesho:</span>
+                            <span class="text-red-600">0-15%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="font-medium">Myntra:</span>
+                            <span class="text-red-600">10-25%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tips Section -->
+                <div class="bg-white rounded-lg card-shadow p-6">
+                    <h3 class="text-lg font-bold mb-4 text-gray-800">
+                        <i class="fas fa-lightbulb mr-2"></i>Profit Optimization Tips
+                    </h3>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Buy in bulk to reduce per-unit cost</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Optimize listing for better visibility</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Use platform-specific promotions</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Monitor competitor pricing</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Focus on high-margin products</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Features Section -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Why Choose Our Calculator?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-rupee-sign text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">India-Specific</h3>
+                    <p class="text-gray-600">Designed specifically for Indian e-commerce platforms with local market insights</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-mobile-alt text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Mobile Friendly</h3>
+                    <p class="text-gray-600">Optimized for mobile devices, calculate profits on the go</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-chart-line text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Detailed Analytics</h3>
+                    <p class="text-gray-600">Get comprehensive profit analysis with actionable insights</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer AdSense Zone -->
+    <div class="w-full py-4 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="adsense-zone rounded">
+                <span><i class="fas fa-ad mr-2"></i>AdSense Bottom Banner Zone (728x90 / 320x50 Mobile)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-6">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Product Profit Calculator</h3>
+                    <p class="text-sm text-gray-400">India's most trusted calculator for e-commerce sellers on Amazon, Flipkart, Meesho and more.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-3">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white">Home</a></li>
+                        <li><a href="#" class="hover:text-white">Calculator</a></li>
+                        <li><a href="#" class="hover:text-white">Tips</a></li>
+                        <li><a href="#" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-3">Platforms</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white">Amazon India</a></li>
+                        <li><a href="#" class="hover:text-white">Flipkart</a></li>
+                        <li><a href="#" class="hover:text-white">Meesho</a></li>
+                        <li><a href="#" class="hover:text-white">Myntra</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-3">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-6 pt-6 text-center text-sm text-gray-400">
+                <p>&copy; 2024 Product Profit Calculator India. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Auto-fill commission rates based on platform
+        document.getElementById('platform').addEventListener('change', function() {
+            const platform = this.value;
+            const commissionField = document.getElementById('commission');
+            
+            const commissionRates = {
+                'amazon': '15',
+                'flipkart': '15',
+                'meesho': '10',
+                'myntra': '18',
+                'general': '0'
+            };
+            
+            commissionField.value = commissionRates[platform] || '0';
+        });
+
+        // Auto-calculate when values change
+        const inputs = ['costPrice', 'sellingPrice', 'quantity', 'commission', 'shipping', 'otherExpenses'];
+        inputs.forEach(id => {
+            document.getElementById(id).addEventListener('input', function() {
+                if (document.getElementById('costPrice').value && document.getElementById('sellingPrice').value) {
+                    calculateProfit();
+                }
+            });
+        });
+
+        function calculateProfit() {
+            // Get input values
+            const productName = document.getElementById('productName').value || 'Product';
+            const currency = document.getElementById('currency').value;
+            const costPrice = parseFloat(document.getElementById('costPrice').value) || 0;
+            const sellingPrice = parseFloat(document.getElementById('sellingPrice').value) || 0;
+            const quantity = parseInt(document.getElementById('quantity').value) || 1;
+            const commission = parseFloat(document.getElementById('commission').value) || 0;
+            const shipping = parseFloat(document.getElementById('shipping').value) || 0;
+            const otherExpenses = parseFloat(document.getElementById('otherExpenses').value) || 0;
+
+            // Calculate metrics
+            const totalCost = (costPrice * quantity) + shipping + otherExpenses;
+            const grossRevenue = sellingPrice * quantity;
+            const commissionAmount = (grossRevenue * commission) / 100;
+            const netRevenue = grossRevenue - commissionAmount;
+            const netProfit = netRevenue - totalCost;
+            const profitMargin = grossRevenue > 0 ? (netProfit / grossRevenue) * 100 : 0;
+
+            // Currency symbols
+            const currencySymbols = {
+                'INR': '₹',
+                'USD': '$',
+                'EUR': '€',
+                'GBP': '£'
+            };
+            const symbol = currencySymbols[currency];
+
+            // Generate results HTML
+            const isProfit = netProfit >= 0;
+            const resultCardClass = isProfit ? 'result-card' : 'loss-card';
+            const profitIcon = isProfit ? 'fa-arrow-up' : 'fa-arrow-down';
+            const profitText = isProfit ? 'Profit' : 'Loss';
+
+            const resultsHTML = `
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h4 class="text-sm font-medium text-blue-800">Total Cost</h4>
+                        <p class="text-2xl font-bold text-blue-600">${symbol}${totalCost.toFixed(2)}</p>
+                    </div>
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <h4 class="text-sm font-medium text-green-800">Gross Revenue</h4>
+                        <p class="text-2xl font-bold text-green-600">${symbol}${grossRevenue.toFixed(2)}</p>
+                    </div>
+                    <div class="bg-red-50 p-4 rounded-lg">
+                        <h4 class="text-sm font-medium text-red-800">Commission</h4>
+                        <p class="text-2xl font-bold text-red-600">${symbol}${commissionAmount.toFixed(2)}</p>
+                    </div>
+                    <div class="${resultCardClass} p-4 rounded-lg">
+                        <h4 class="text-sm font-medium opacity-90">Net ${profitText}</h4>
+                        <p class="text-2xl font-bold flex items-center">
+                            <i class="fas ${profitIcon} mr-2"></i>${symbol}${Math.abs(netProfit).toFixed(2)}
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                    <h4 class="text-lg font-semibold mb-4">Product: ${productName}</h4>
+                    <div class="grid md:grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <strong>Profit Margin:</strong> ${profitMargin.toFixed(2)}%
+                        </div>
+                        <div>
+                            <strong>Net Revenue:</strong> ${symbol}${netRevenue.toFixed(2)}
+                        </div>
+                        <div>
+                            <strong>Cost per Unit:</strong> ${symbol}${costPrice.toFixed(2)}
+                        </div>
+                        <div>
+                            <strong>Selling Price per Unit:</strong> ${symbol}${sellingPrice.toFixed(2)}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
+                    <h5 class="font-semibold text-yellow-800 mb-2">
+                        <i class="fas fa-lightbulb mr-2"></i>Optimization Tips for Indian Sellers:
+                    </h5>
+                    <ul class="text-sm text-yellow-700 space-y-1">
+                        ${isProfit ? 
+                            `<li>• Great! You're making a ${profitMargin.toFixed(1)}% profit margin</li>
+                             <li>• Consider increasing quantity to scale your profits</li>
+                             <li>• Monitor competitor pricing to maintain edge</li>
+                             <li>• Explore bulk purchasing to reduce cost per unit</li>` :
+                            `<li>• You're currently making a loss of ${symbol}${Math.abs(netProfit).toFixed(2)}</li>
+                             <li>• Consider increasing your selling price</li>
+                             <li>• Look for ways to reduce cost price through better suppliers</li>
+                             <li>• Negotiate lower platform commission if possible</li>`
+                        }
+                        <li>• Use festival seasons for better pricing in India</li>
+                        <li>• Optimize your product listing for better conversion</li>
+                    </ul>
+                </div>
+            `;
+
+            document.getElementById('results').innerHTML = resultsHTML;
+            document.getElementById('resultsSection').classList.remove('hidden');
+            
+            // Smooth scroll to results
+            document.getElementById('resultsSection').scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+
+        // Initialize with default values
+        document.getElementById('quantity').value = '1';
+        document.getElementById('commission').value = '15';
+    </script>
+</body>
+</html>
